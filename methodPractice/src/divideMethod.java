@@ -52,8 +52,13 @@ class averageMethod{
     public static double sum(double n, double n2, double n3){
         return n + n2 + n3;
     }
+    public static double sum(double n, double n2, double n3, double n4){
+        double num = n + n2 + n3 + n4;
+        return num;
+    }
     public static double average(double n, double n2, double n3){
         double sum = sum(n, n2, n3);
-        return sum / 3;
+        double sum2 = sum / 3.0;
+        return sum2
     }
 }
