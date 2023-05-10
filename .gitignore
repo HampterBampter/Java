@@ -1,3 +1,7 @@
 
 .idea/*
 out/production/Java/.gitattributes
+out/production/Java/.gitignore
+out/production/Java/.idea/.gitignore
+*/.gitignore
+*/*.iml
