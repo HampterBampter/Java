@@ -5,10 +5,8 @@ import java.util.Scanner;
 public class chatBot {
     public static void main(String[] args) {
         String name = greeting();
-
-        greeting();
         repeat(name);
-        ageQuestions();
+        ageQuestions(name);
         count();
         test();
     }
@@ -33,7 +31,8 @@ public class chatBot {
     }
 
 
-    public static void ageQuestions() {
+    public static void ageQuestions(String name) {
+        System.out.println("Ok " + name);
         Scanner scan = new Scanner(System.in);
         System.out.println("Let's play a game! I'll ask you questions and then you answer yes or no. At the end, I'll guess your age!");
         System.out.println("Do you have a job?");
@@ -93,10 +92,10 @@ public class chatBot {
         Scanner scan = new Scanner(System.in);
         System.out.println("Now I'll have you take a test. Respond with either a, b, c, or d.");
         System.out.println("What four parts make up a for loop?\n    " +
-                "a. a variable, a condition, a counter variable, and its functionality\n    " +
+                "a. Glam Sally has been here\n    " +
                 "b. a variable, a condition, a counter variable, and its functionality\n    " +
-                "c. a variable, a condition, a counter variable, and its functionality\n    " +
-                "d. a variable, a condition, a counter variable, and its functionality");
+                "c. Let's visit a sunflower patch\n    " +
+                "d. We should visit Disney Land");
 
         while (true) {
             String letter = scan.nextLine();
